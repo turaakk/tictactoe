@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 50px;
+    justify-content: center;
+    background-color: black;
+    display: flex;
+}
+
+a {
+    color: #F09819;
+    cursor: pointer;
+}
+
+.game {
+    padding: 0px;
+    display: grid;
+    padding: 20px;
+    gap: 20px 20px;
+    width: 360px;
+    padding-right: 0px;
+    border-radius: 10px;
+    background-color: aqua;
+    border: 20px solid #d4d10d;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+}
+
+.status {
+    top: 10px;
+    color: white;
+    font-size: 50px;
+    margin: 100px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-user-select: none;
+    background-size: 200% auto;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+}
