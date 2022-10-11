@@ -1,5 +1,28 @@
-let WIN_MATCH = [['1','2','3'],['4','5','6'],['7','8','9'],['1','4','7'],['2','5','8'],['3','6','9'],['1','5','9'],['3','5','7'],], X_O = 'X', over = false, statusArea = document.getElementById('status'), X_WON = 'X Won, <a onclick="location.reload()">Retry</a>', O_WON = 'O Won, <a onclick="location.reload()">Retry</a>', NO_WINNER = 'Nobody Won, <a onclick="location.reload()">Retry</a>'
+// Possible winner matches
+let WIN_MATCH = [
+    ['1','2','3'],
+    ['4','5','6'],
+    ['7','8','9'],
+    ['1','4','7'],
+    ['2','5','8'],
+    ['3','6','9'],
+    ['1','5','9'],
+    ['3','5','7'],
+]
 
+// Weather it O's or X's turn
+X_O = 'X'
+
+// If the game is over
+over = false
+
+// 
+statusArea = document.getElementById('status')
+X_WON = 'X Won, <a onclick="location.reload()">Retry</a>'
+O_WON = 'O Won, <a onclick="location.reload()">Retry</a>'
+NO_WINNER = 'Nobody Won, <a onclick="location.reload()">Retry</a>'
+
+// get element by Id
 function IT(id){
     return document.getElementById(id).textContent.toString()
 }
